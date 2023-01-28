@@ -122,7 +122,7 @@ public class TechJobs {
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
     String stars = "*****";
     if(someJobs.isEmpty()) {
-        System.out.println("No results matching that search term");
+        System.out.println("No results matching that search criteria");
     }else{
         for(HashMap<String, String> chosenJob : someJobs){
             System.out.println(stars);
