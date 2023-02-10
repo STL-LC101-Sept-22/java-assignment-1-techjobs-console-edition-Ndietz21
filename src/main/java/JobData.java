@@ -101,8 +101,10 @@ public class JobData {
         for(HashMap<String, String> allJobsSearch : allJobs) {
             for(Map.Entry<String, String> searchedJob: allJobsSearch.entrySet()) {
                 String userSearchTerm = searchedJob.getValue();
+
                 if (userSearchTerm.toLowerCase().contains(value.toLowerCase())) {
                     jobs.add(allJobsSearch);
+                    break;
                 }
             }
         }
